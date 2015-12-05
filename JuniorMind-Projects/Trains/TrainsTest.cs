@@ -18,9 +18,16 @@ namespace Trains
             float distantaZburata = CalculateDistance(300, 20, 40);
             Assert.AreEqual(150, distantaZburata);
         }
+        [TestMethod]
+        public void Test3()
+        {
+            float distantaZburata = CalculateDistance(648, 85, 170);
+            Assert.AreEqual(324, distantaZburata);
+        }
         float CalculateDistance(float distantaTotala, float VitezaTren, float VitezaPasare)
         {
-            float timp = (distantaTotala / 2) / (VitezaTren * 2);
+            distantaTotala = distantaTotala / 2; //at 1/4 of distance on both sides, remaining distance is halved
+            float timp = distantaTotala / (VitezaTren * 2);
             return timp * VitezaPasare;
         }
     }
