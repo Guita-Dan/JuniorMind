@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trains", "Trains\Trains.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capre", "Capre\Capre.csproj", "{0178D94C-D2BC-46E4-BECB-19D33087864F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mushrooms", "Mushrooms\Mushrooms.csproj", "{3CECE41B-D666-4671-9189-5A7ACB5CBF82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0178D94C-D2BC-46E4-BECB-19D33087864F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0178D94C-D2BC-46E4-BECB-19D33087864F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0178D94C-D2BC-46E4-BECB-19D33087864F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CECE41B-D666-4671-9189-5A7ACB5CBF82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CECE41B-D666-4671-9189-5A7ACB5CBF82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CECE41B-D666-4671-9189-5A7ACB5CBF82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CECE41B-D666-4671-9189-5A7ACB5CBF82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
