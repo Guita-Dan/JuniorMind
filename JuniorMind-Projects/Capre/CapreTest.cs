@@ -13,14 +13,19 @@ namespace Capre
             Assert.AreEqual(2, foodPerGoatPerDay);
         }
         [TestMethod]
-        public void FoodForSameGoats()
+        public void FoodForAnyGoats()
         {
             float foodPerGoatPerDay = CalculateFoodPerDayPerGoat(3, 4, 8);
-            Assert.AreEqual(8, foodPerGoatPerDay*3*4);
+            float foodForAnyGoats = CalculateFood(5, 9);
+            Assert.AreEqual(30, foodPerGoatPerDay*foodForAnyGoats);
         }
         float CalculateFoodPerDayPerGoat(float days, float goats,float food)
         {
             return food / days / goats;
+        }
+        float CalculateFood(float days, float goats)
+        {
+            return days * goats;
         }
     }
 }
