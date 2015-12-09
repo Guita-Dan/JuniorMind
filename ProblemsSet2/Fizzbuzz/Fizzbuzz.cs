@@ -21,15 +21,20 @@ namespace Fizzbuzz
         {
             Assert.AreEqual("FizzBuzz", FizzBuzz(15));
         }
+        [TestMethod]
+        public void TestForNumber()
+        {
+            Assert.AreEqual("13", FizzBuzz(13));
+        }
         string FizzBuzz(int nr)
         {
-            if (nr % 3 == 0 && nr % 5 == 0)
+           if (nr % 3 == 0 && nr % 5 == 0)
                 return "FizzBuzz";
             if (nr % 3 == 0)
                 return "Fizz";
             if (nr % 5 == 0)
                 return "Buzz";
-            return nr.ToString();
+            return nr.ToString();        
         }
         
     }
