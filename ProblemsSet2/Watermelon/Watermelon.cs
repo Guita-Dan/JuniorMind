@@ -7,8 +7,18 @@ namespace Watermelon
     public class Watermelon
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ParityCheck()
         {
+            int Watermelon = VerifyParity(10);
+            Assert.AreEqual(1, Watermelon);
         }
+        int VerifyParity(int WatermelonWeight)
+        {
+            if (WatermelonWeight % 2 == 0)
+                return 1;
+            else
+                return 0;
+        }
+
     }
 }
