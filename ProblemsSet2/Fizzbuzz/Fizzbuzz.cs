@@ -7,8 +7,16 @@ namespace Fizzbuzz
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestForFizz()
         {
+            Assert.AreEqual("Fizz", FizzBuzz(9));
         }
+        string FizzBuzz(int nr)
+        {
+            if (nr % 3 == 0)
+                    return "Fizz";
+            return nr.ToString();
+        }
+        
     }
 }
