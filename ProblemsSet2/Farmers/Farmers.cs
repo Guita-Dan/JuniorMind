@@ -13,9 +13,9 @@ namespace Farmers
         }
         double CalculateInitialLength(int TotalArea, int WidthOfSecondField)
         {
-            return (-WidthOfSecondField + Math.Sqrt(WidthOfSecondField * WidthOfSecondField + 4 * TotalArea)) / 2;
+            double determinant = WidthOfSecondField * WidthOfSecondField + 4 * TotalArea;
+            return (-WidthOfSecondField + Math.Sqrt(determinant)) / 2;
         }
-       
 
     }
 }
