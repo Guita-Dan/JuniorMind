@@ -11,10 +11,18 @@ namespace Fizzbuzz
         {
             Assert.AreEqual("Fizz", FizzBuzz(9));
         }
+        [TestMethod]
+        public void TestForBuzz()
+        {
+            Assert.AreEqual("Buzz", FizzBuzz(10));
+        }
         string FizzBuzz(int nr)
         {
             if (nr % 3 == 0)
-                    return "Fizz";
+                return "Fizz";
+            else
+                if (nr % 5 == 0)
+                    return "Buzz";
             return nr.ToString();
         }
         
