@@ -9,15 +9,21 @@ namespace Watermelon
         [TestMethod]
         public void ParityCheck()
         {
-            int Watermelon = VerifyParity(10);
-            Assert.AreEqual(1, Watermelon);
+            string Watermelon = VerifyParity(10);
+            Assert.AreEqual("Da", Watermelon);
         }
-        int VerifyParity(int WatermelonWeight)
+        [TestMethod]
+        public void ParityCheckwithStrings()
+        {
+            string Watermelon = VerifyParity(19);
+            Assert.AreEqual("Nu", Watermelon);
+        }
+        string VerifyParity(int WatermelonWeight)
         {
             if (WatermelonWeight % 2 == 0)
-                return 1;
+                return "Da";
             else
-                return 0;
+                return "Nu";
         }
 
     }
