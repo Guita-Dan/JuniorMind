@@ -7,14 +7,16 @@ namespace Farmers
     public class UnitTest1
     {
         [TestMethod]
-        public void CalculateIntialLengthForSquare()
+        public void CalculateInitialAreaOfField()
         {
-            Assert.AreEqual(2, CalculateInitialLength(10, 3));
+            Assert.AreEqual(4, CalculateInitialAreaOfField(10, 3));
         }
-        double CalculateInitialLength(int TotalArea, int WidthOfSecondField)
+        double CalculateInitialAreaOfField(int TotalArea, int WidthOfSecondField)
         {
             double determinant = WidthOfSecondField * WidthOfSecondField + 4 * TotalArea;
-            return (-WidthOfSecondField + Math.Sqrt(determinant)) / 2;
+            double Length = (-WidthOfSecondField + Math.Sqrt(determinant)) / 2; ;
+            
+            return Length * Length;
         }
 
     }
