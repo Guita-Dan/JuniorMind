@@ -7,9 +7,13 @@ namespace Rent
     public class RentPerMonth
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CalculateRentForMaximumTenDaysPenalty()
         {
+            Assert.AreEqual(104, CalculateRentPerMonth(100, 2));
         }
-        
+        decimal CalculateRentPerMonth(int RentPrice, int NumberOfDays)
+        {
+            return RentPrice+RentPrice*2*NumberOfDays/100;
+        }
     }
 }
