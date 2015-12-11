@@ -4,11 +4,16 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace ChessTable
 {
     [TestClass]
-    public class UnitTest1
+    public class Chess
     {
         [TestMethod]
-        public void TestMethod1()
+        public void SquaresForOneRow()
         {
+            Assert.AreEqual(1, CalculateNumberOfSquares(1));
+        }
+        int CalculateNumberOfSquares(int numberOfRowsAndColumns)
+        {
+            return numberOfRowsAndColumns;
         }
     }
 }
