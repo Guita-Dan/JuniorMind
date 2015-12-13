@@ -7,16 +7,26 @@ namespace Lottery
     public class Lottery
     {
         [TestMethod]
-        public void OneNumber()
+        public void OneNumberOutOfFive()
         {
-            Assert.AreEqual(5, CalculateNumberOfPossibleTickets(1, 5));
+            Assert.AreEqual((float)0.2, CalculateTotalChances(1, 5));
         }
-        int CalculateNumberOfPossibleTickets(int nrOfChosenNumbers,int nrOfTotalNumbers)
+        [TestMethod]
+        public void CategoryOne()
         {
-            int possibleTickets = 1;
-            for (int i = nrOfTotalNumbers; i > (nrOfTotalNumbers - nrOfChosenNumbers); i--)
-                   possibleTickets*=i;
-            return possibleTickets;
+            Assert.AreEqual((float)7.1511247E-08, CalculateTotalChances(6, 49));
+        }
+
+        float CalculateTotalChances(int nrOfChosenNumbers, int nrOfTotalNumbers)
+        {
+            float totalChances = 1;
+            for(int i = nrOfChosenNumbers; i >= 1; i--)
+            {
+                    totalChances = totalChances * nrOfChosenNumbers /nrOfTotalNumbers;
+                    nrOfChosenNumbers--;
+                    nrOfTotalNumbers--;
+            }
+            return totalChances;
+            }
         }
     }
-}
