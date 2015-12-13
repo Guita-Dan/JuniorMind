@@ -16,6 +16,11 @@ namespace Lottery
         {
             Assert.AreEqual((float)7.1511247E-08, CalculateTotalChances(6, 49));
         }
+        [TestMethod]
+        public void CategoryTwo()
+        {
+            Assert.AreEqual((float)5.244158E-07, CalculateTotalChances(5, 49));
+        }
 
         float CalculateTotalChances(int nrOfChosenNumbers, int nrOfTotalNumbers)
         {
