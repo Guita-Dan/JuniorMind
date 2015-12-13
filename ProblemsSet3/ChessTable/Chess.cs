@@ -23,9 +23,11 @@ namespace ChessTable
         }
         int CalculateNumberOfSquares(int numberOfRowsAndColumns)
         {
-            if (numberOfRowsAndColumns > 1)
-                return numberOfRowsAndColumns * numberOfRowsAndColumns + CalculateNumberOfSquares(numberOfRowsAndColumns - 1);
-            return numberOfRowsAndColumns;
+            int totalSquares=0;
+            
+            for (int i = 1; i <= numberOfRowsAndColumns; i++)
+                 totalSquares =totalSquares + numberOfRowsAndColumns + (i - 1) * (i - 1);
+            return totalSquares;
 
         }
     }
