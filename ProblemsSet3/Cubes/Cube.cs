@@ -7,8 +7,17 @@ namespace Cubes
     public class Cube
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TripleEightForFirstNumber()
         {
+            Assert.AreEqual(true, VerifyTripleEightEnding(192));
+        }
+        bool VerifyTripleEightEnding(long number)
+        {
+            if(Math.Pow(number, 3) % 1000 == 888)
+                return true;
+            else
+                return false;
+                    
         }
     }
 }
