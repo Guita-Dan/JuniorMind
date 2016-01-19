@@ -7,8 +7,13 @@ namespace Anagrams
     public class Anagram
     {
         [TestMethod]
-        public void TestMethod1()
+        public void EmptyStringTest()
         {
+            Assert.AreEqual(0, CalculateNrOfAnagrams(""));
+        }
+        int CalculateNrOfAnagrams(string word)
+        {
+                return 0;
         }
     }
 }
