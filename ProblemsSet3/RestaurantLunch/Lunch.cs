@@ -16,6 +16,15 @@ namespace RestaurantLunch
         {
             Assert.AreEqual(4, CalculateGreatestCommonDivider(8, 4));
         }
+        [TestMethod]
+        public void CalculateMeetingDay()
+        {
+            Assert.AreEqual(12, CalculateWhenWeMeet(4, 6));
+        }
+        int CalculateWhenWeMeet(int him, int me)
+        {
+            return him * me / CalculateGreatestCommonDivider(him, me);
+        }
         int CalculateGreatestCommonDivider(int him, int me)
         {
             while (him != me)
