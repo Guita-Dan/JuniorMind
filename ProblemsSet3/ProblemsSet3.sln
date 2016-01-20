@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cubes", "Cubes\Cubes.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagrams", "Anagrams\Anagrams.csproj", "{7747F504-6E25-4AAE-B0E2-662A0EA6E73F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantLunch", "RestaurantLunch\RestaurantLunch.csproj", "{941850AE-2162-414D-9736-1E359D8834B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7747F504-6E25-4AAE-B0E2-662A0EA6E73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7747F504-6E25-4AAE-B0E2-662A0EA6E73F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7747F504-6E25-4AAE-B0E2-662A0EA6E73F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{941850AE-2162-414D-9736-1E359D8834B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{941850AE-2162-414D-9736-1E359D8834B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{941850AE-2162-414D-9736-1E359D8834B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{941850AE-2162-414D-9736-1E359D8834B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
