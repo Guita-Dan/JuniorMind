@@ -16,10 +16,22 @@ namespace ExcelColumns
         {
             Assert.AreEqual("AB", FindExcelColumnName(28));
         }
+        [TestMethod]
+        public void TripleLetterTest()
+        {
+            Assert.AreEqual("ABC", FindExcelColumnName(731));
+        }
+        [TestMethod]
+        public void EmptyString()
+        {
+            Assert.AreEqual("A", FindExcelColumnName(-3));
+        }
         string FindExcelColumnName(int columnNumber)
         {
             int modulo;
             string columnName = String.Empty;
+            if (columnNumber <= 0)
+                return "A";
             while (columnNumber > 0)
             {
                 modulo = (columnNumber - 1) % 26;
